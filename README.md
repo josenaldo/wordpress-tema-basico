@@ -51,3 +51,6 @@ Se não for suficiente, execute o comando restart-docker, que estpa na pasta too
 ```cmd
 tools\restart-docker.bat
 ```
+
+Usuário: admin
+Senha: admin
