@@ -24,14 +24,14 @@ docker-compose up --build --force-recreate -d
 docker-machine ip
 ```
 
-O endereço para acesso é [http://IP_DO_DOCKER_MACHINE/novo-tema]([http://IP_DO_DOCKER_MACHINE/novo-tema])
+O endereço para acesso é [http://IP_DO_DOCKER_MACHINE/tema-basico]([http://IP_DO_DOCKER_MACHINE/tema-basico])
 
 ### Conectando num container que está rodando
 
 ```shell
-docker exec -it novo-tema_app bash
+docker exec -it tema-basico_app bash
 
-docker exec -it novo-tema_db bash
+docker exec -it tema-basico_db bash
 ```
 
 ### Apaga os container e os volumes

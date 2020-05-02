@@ -1,14 +1,14 @@
 version: "3.3"
 services:
   app:
-    container_name: novo-tema_app
+    container_name: tema-basico_app
     build: ./site
     ports:
     - "8000:80"
     volumes:
-      - /d/repositorios/novo-tema/site/html:/var/www/html
-      - /d/repositorios/novo-tema/:/home/wordpress
-      - /d/repositorios/novo-tema/conf/php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - /d/repositorios/tema-basico/site/html:/var/www/html
+      - /d/repositorios/tema-basico/:/home/wordpress
+      - /d/repositorios/tema-basico/conf/php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     restart: always
     depends_on:
       - db
@@ -19,7 +19,7 @@ services:
        WORDPRESS_DB_USER: dbuser
        WORDPRESS_DB_PASSWORD: dbpass
   db:
-    container_name: novo-tema_db
+    container_name: tema-basico_db
     image: mysql/mysql-server:latest
     command: --default-authentication-plugin=mysql_native_password
     restart: always
@@ -33,7 +33,7 @@ services:
     networks:
         - web
     volumes:
-      - /d/repositorios/novo-tema/db/initdb:/docker-entrypoint-initdb.d
+      - /d/repositorios/tema-basico/db/initdb:/docker-entrypoint-initdb.d
 
 networks:
   web:
