@@ -1,0 +1,40 @@
+version: "3.3"
+services:
+  app:
+    container_name: novo-tema_app
+    build: ./site
+    ports:
+    - "8000:80"
+    volumes:
+      - /d/repositorios/novo-tema/site/html:/var/www/html
+      - /d/repositorios/novo-tema/:/home/wordpress
+      - /d/repositorios/novo-tema/conf/php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    restart: always
+    depends_on:
+      - db
+    networks:
+      - web
+    environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_USER: dbuser
+       WORDPRESS_DB_PASSWORD: dbpass
+  db:
+    container_name: novo-tema_db
+    image: mysql/mysql-server:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpass
+      - MYSQL_DATABASE=dbtema
+      - MYSQL_USER=novo-dbuser
+      - MYSQL_PASSWORD=dbpass
+    networks:
+        - web
+    volumes:
+      - /d/repositorios/novo-tema/db/initdb:/docker-entrypoint-initdb.d
+
+networks:
+  web:
+    driver: bridge
