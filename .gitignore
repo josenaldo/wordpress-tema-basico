@@ -1,12 +1,10 @@
-
-# ignore everything in the root except the "site/html/wp-content" directory.
+# ignore everything in the "site" directory:
 site/html/*
 !site/html/wp-content/
 
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
 site/html/wp-content/*
-!site/html/wp-content/mu-plugins/
 !site/html/wp-content/themes/
 !site/html/wp-content/plugins/
 site/html/wp-content/plugins/fakerpress
@@ -67,9 +65,12 @@ Thumbs.db
 !CHANGELOG.md
 !composer.json
 
-# track these themes
-# add your own entries here
+!docker-composer.yml
+!tools/*
+!site/html/Dockerfile
 !conf/*
 !db/*
-!tools/*
-!site/html/wp-content/themes/chimichangas/
+
+# track these themes
+# add your own entries here
+!site/html/wp-content/themes/tema-basico/
