@@ -59,6 +59,7 @@ se projeto usa os seguintes projetos
 
 * [https://github.com/ahmadawais/WPGulp](https://github.com/ahmadawais/WPGulp)
 * [https://getbootstrap.com/](https://getbootstrap.com/)
+  * [https://github.com/twbs/bootstrap](https://github.com/twbs/bootstrap)
 * [https://underscores.me/](https://underscores.me/)
 
 Referências:
