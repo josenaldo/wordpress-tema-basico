@@ -54,3 +54,18 @@ tools\restart-docker.bat
 
 Usuário: admin
 Senha: admin
+
+se projeto usa os seguintes projetos
+
+* [https://github.com/ahmadawais/WPGulp](https://github.com/ahmadawais/WPGulp)
+* [https://getbootstrap.com/](https://getbootstrap.com/)
+* [https://underscores.me/](https://underscores.me/)
+
+Referências:
+
+* [https://stevepolito.design/blog/create-a-bootstrap-theme-for-wordpress/](https://stevepolito.design/blog/create-a-bootstrap-theme-for-wordpress/)
+
+1. Executar o docker compose
+2. Baixar o tema criado em Underscore e descompactar na pasta de temas
+3. Instalar e rodar o wpgulp
+4. Preparar o ambiente
