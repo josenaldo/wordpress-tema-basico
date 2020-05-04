@@ -6,6 +6,7 @@ RUN apt-get update
 RUN apt-get install -y git
 RUN apt-get install -y default-mysql-client
 RUN apt-get install -y default-libmysqlclient-dev
+RUN apt-get install -y npm
 RUN docker-php-ext-install mysqli
 
 RUN git config --global user.email "josenaldo@gmail.com"
