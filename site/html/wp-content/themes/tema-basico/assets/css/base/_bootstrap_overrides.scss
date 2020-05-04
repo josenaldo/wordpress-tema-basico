@@ -1,1 +1,35 @@
-$primary: green;
+// Brand Colors
+@import "../bootstrap/functions";
+
+$blue: #0d47a1;
+$indigo: #1a237e;
+$purple: #331111;
+$pink: #c51162;
+$red: #ba000d;
+$orange: #e65100;
+$yellow: #f57f17;
+$green: #1b5e20;
+$teal: #004d40;
+$cyan: #006064;
+$white: #fff;
+$gray-100: #eceff1;
+$gray-200: #cfd8dc;
+$gray-300: #b0bec5;
+$gray-400: #78909c;
+$gray-500: #607d8b;
+$gray-600: #546e7a;
+$gray-700: #455a64;
+$gray-800: #37474f;
+$gray-900: #263238;
+$black: #000;
+$grays: (100: $gray-100, 200: $gray-200, 300: $gray-300, 400: $gray-400, 500: $gray-500, 600: $gray-600, 700: $gray-700, 800: $gray-800, 900: $gray-900);
+
+$colors: (blue: $blue, indigo: $indigo, purple: $purple, pink: $pink, red: $red, orange: $orange, yellow: $yellow, green: $green, teal: $teal, cyan: $cyan, white: $white, gray: $gray-600,gray-dark: $gray-800);
+$theme-color-interval: 8%;
+$theme-color: (primary: $red, secondary: $gray-600, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
+// Body
+$body-bg: $gray-100;
+$body-color: $gray-900;
+$primary: $red;
+
+
